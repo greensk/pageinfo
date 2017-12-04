@@ -38,7 +38,7 @@ if (substr_count($title, '&mdash;') === 1) {
 }
 
 header('Content-Type: application/json; charset=UTF-8');
-echo json_encode(['success' => true, 'soruce' => trim($source), 'name' => trim($article)], JSON_UNESCAPED_UNICODE);
+echo json_encode(['success' => true, 'source' => trim($source), 'name' => trim($article)], JSON_UNESCAPED_UNICODE);
 
 function website_title($url) {
 	$ch = curl_init();
